@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .top-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px; 
+            background-color: limegreen;
+        }
+
+        .instrument-section, .width-section {
+            display: flex;
+            gap: 15px; 
+        }
+
+        .canvas-container {
+            flex: 2; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px; 
+        }
+
+        .canvas-element {
+            border: 4px solid limegreen;
+            border-radius: 10px;
+            max-width: 100%; 
+            width: 100%;
+            height: 700px;
+        }
+
+        .bottom-panel {
+            background-color: limegreen;
+            padding: 20px; 
+        }
+        .colors {
+        display: flex;
+        gap: 5px;
+        }
+
+        .color {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .color.selected {
+            border: 2px solid #000;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="top-panel" class="top-panel">
+            <div id="instrument-section" class="instrument-section">
+                <i id="pen" class="bi bi-pen"></i>
+                <i id="eraser" class="bi bi-eraser-fill"></i>
+                <i id="clear" class="bi bi-trash3"></i>
+            </div>           
+            <div id="width-section" class="width-section">
+                <i id="increase-width" class="bi bi-plus-square-fill"></i>
+                <div id="width-value">0</div>
+                <i id="decrease-width" class="bi bi-dash-square-fill"></i>
+            </div>
+            <div id="colors" class="colors">
+
+            </div>
+        </div>
+        <div id="canvas-container" class="canvas-container">
+            <canvas id="canvas-element" class="canvas-element"></canvas>
+        </div>
+        <div id="bottom-panel" class="bottom-panel"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

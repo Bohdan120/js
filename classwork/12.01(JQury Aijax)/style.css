@@ -1,0 +1,65 @@
+/* // .animate() - виконує задану користувачем анімацію з вибраними елементами. */
+
+/* #id1 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    color: white;
+} */
+
+/* #div1, div2{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    display: none;  
+} */
+
+/* #div1, div2{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}  */
+
+/* div{
+    margin: 3px;
+    width: 80px;
+    height: 80px;
+    float: left;
+    display: none;
+} */
+/* #one{background-color: darkmagenta}
+#two{background-color: firebrick}
+#three{background-color: orange} */
+/* 
+
+#block {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#block_task3 {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative;
+} */
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    margin: 20px;
+
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+

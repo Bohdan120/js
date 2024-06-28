@@ -1,0 +1,15 @@
+.stopwatch {
+ width: 200px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+.display {
+ font-size: 60px;
+}
+
+.button {
+ font-size: 24px;
+ padding: 10px 20px;
+ margin: 5px;
+}

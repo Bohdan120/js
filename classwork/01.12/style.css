@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(70deg, blue, pink);
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    height: 700px;
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#leftBtn,
+#rightBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: orange;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+#leftBtn {
+    left: 10px;
+}
+
+#rightBtn {
+    right: 10px;
+}
+
+#leftBtn:hover,
+#rightBtn:hover {
+    background-color: pink; 
+}
+

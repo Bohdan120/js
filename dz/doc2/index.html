@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse Coordinates and Button Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #mouseTracker {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    #coordinatesDisplay {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="mouseTracker">
+  <div id="coordinatesDisplay">0</div>
+</div>
+
+<script>
+  const mouseTracker = document.getElementById('mouseTracker');
+  const coordinatesDisplay = document.getElementById('coordinatesDisplay');
+
+  // Функція, яка виводить координати та кнопку миші
+  function displayMouseInfo(event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+    const mouseButton = event.button;
+
+    coordinatesDisplay.textContent = `Mouse Coordinates: X=${mouseX}, Y=${mouseY} | Mouse Button: ${mouseButton === 0 ? 'Left' : mouseButton === 1 ? 'Middle' : 'Right'}`;
+  }
+
+  // Додаємо слухача подій для відстеження руху миші в межах головного div
+  mouseTracker.addEventListener('mousemove', displayMouseInfo);
+
+  // Додаємо слухача подій для відстеження кліку миші в межах головного div
+  mouseTracker.addEventListener('mousedown', displayMouseInfo);
+</script>
+
+</body>
+</html>

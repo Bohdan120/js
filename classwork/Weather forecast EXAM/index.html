@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Weather App</h2>
+        <input type="text" id="city" placeholder="Enter city">
+        
+
+        <div id="buttons">
+            <button id="searchBtn">Search</button>
+            <button id="btnToday">TODAY</button>
+            <button id="btnFivedays">5-DAY</button>
+        </div>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+
+        <div id="weather-info"></div>
+        <div id="title">
+            Hourly forecast
+        </div>
+        <div id="hourly-forecast"></div>
+
+        <div id="fiveDayContainer"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

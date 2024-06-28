@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+       .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+     
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: none;
+            margin-bottom: 20px;
+        }
+
+        button {
+            display: flex;
+            justify-content: space-between;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            width: 100%;
+            height: 150px;
+            resize: none;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+  </style>
+<body>
+    <div id="inputContainer">
+        <label for="jsonInput">Enter JSON data:</label>
+        <textarea id="jsonInput" placeholder="Enter JSON data here"></textarea>
+      </div>
+      
+      <button id="btn">Format JSON</button>
+    
+      <div id="outputContainer">
+        <label for="result">Formatted JSON data:</label>
+        <div id="result"></div>
+      </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
